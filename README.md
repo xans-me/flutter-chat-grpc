@@ -1,4 +1,4 @@
-# flutter-grpc-client-example
+# flutter-chat-grpc
 
 ### In this tutorial, we take a look at the basic of building a gRPC client in Flutter/Dart.  We use an existing Go gRPC service to do this.  
 
