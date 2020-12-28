@@ -24,7 +24,7 @@ class ChatService {
     // setup a client
     client = BroadcastClient(
       ClientChannel(
-        "10.0.2.2",
+        "192.168.100.13",
         port: 8080,
         options: ChannelOptions(
           credentials: ChannelCredentials.insecure(),
@@ -39,7 +39,8 @@ class ChatService {
       Message()
         ..id = user.id
         ..content = body
-        ..timestamp = DateTime.now().toIso8601String(),
+        ..timestamp = DateTime.now().toIso8601String()
+        ..user = user,
     );
   }
 

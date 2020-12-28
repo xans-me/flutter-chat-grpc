@@ -115,7 +115,7 @@ class _MessagePageState extends State<MessagePage> {
                     return ListView(
                       children: messages
                           .map((msg) => ListTile(
-                                leading: Text(msg.id.substring(0, 4)),
+                                leading: Text(msg.user.name),
                                 title: Text(msg.content),
                                 subtitle: Text(msg.timestamp),
                               ))

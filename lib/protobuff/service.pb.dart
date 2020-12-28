@@ -63,6 +63,7 @@ class Message extends $pb.GeneratedMessage {
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'content')
     ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'timestamp')
+    ..aOM<User>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'user', subBuilder: User.create)
     ..hasRequiredFields = false
   ;
 
@@ -115,6 +116,17 @@ class Message extends $pb.GeneratedMessage {
   $core.bool hasTimestamp() => $_has(2);
   @$pb.TagNumber(3)
   void clearTimestamp() => clearField(3);
+
+  @$pb.TagNumber(4)
+  User get user => $_getN(3);
+  @$pb.TagNumber(4)
+  set user(User v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasUser() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearUser() => clearField(4);
+  @$pb.TagNumber(4)
+  User ensureUser() => $_ensure(3);
 }
 
 class Connect extends $pb.GeneratedMessage {

@@ -19,6 +19,7 @@ const Message$json = const {
     const {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     const {'1': 'content', '3': 2, '4': 1, '5': 9, '10': 'content'},
     const {'1': 'timestamp', '3': 3, '4': 1, '5': 9, '10': 'timestamp'},
+    const {'1': 'user', '3': 4, '4': 1, '5': 11, '6': '.protobuff.User', '10': 'user'},
   ],
 };
 
